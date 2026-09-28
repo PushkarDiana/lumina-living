@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Living — Дизайнерская мебель & Декор</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="logo">Lumina Living</a>
+
+            <nav class="nav">
+                <a href="#new-arrivals" class="nav__link">Новинки</a>
+                <a href="#about" class="nav__link">О бренде</a>
+                <a href="#catalog" class="nav__link active">Каталог</a>
+                <a href="#contacts" class="nav__link">Контакты</a>
+            </nav>
+
+            <div class="header__actions">
+                <button class="icon-btn" id="search-btn" aria-label="Поиск">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="icon-btn" id="wishlist-btn" aria-label="Избранное">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="badge badge--wishlist">0</span>
+                </button>
+                <button class="icon-btn cart-btn" id="cart-btn" aria-label="Корзина">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="badge badge--cart" id="cart-count">0</span>
+                </button>
+                <button class="icon-btn" id="auth-btn" aria-label="Войти">
+                    <i class="fa-regular fa-user" id="auth-icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <span class="hero__subtitle">Новая коллекция 2026</span>
+                    <h1 class="hero__title">Форма и свет в вашем пространстве</h1>
+                    <p class="hero__description">Минималистичная мебель и предметы интерьера, созданные для уюта и
+                        гармонии в доме.</p>
+                    <a href="#catalog" class="btn btn--primary">Смотреть каталог</a>
+                </div>
+                <div class="hero__image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1000&auto=format&fit=crop"
+                        alt="Стильный интерьер гостиной" class="hero__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "Новинки" -->
+        <section class="new-arrivals section" id="new-arrivals">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section__title">Новинки коллекции</h2>
+                    <!-- Кнопки управления слайдером -->
+                    <div class="slider-controls">
+                        <button class="slider-btn btn-new-prev" aria-label="Предыдущий слайд">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn btn-new-next" aria-label="Следующий слайд">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Слайдер -->
+                <div class="swiper new-products-slider">
+                    <div class="swiper-wrapper" id="new-products-container">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- О бренде -->
+        <section class="about-brand" id="about">
+            <div class="container">
+                <div class="about-brand__wrapper">
+
+                    <div class="about-brand__content">
+                        <span class="about-brand__subtitle">О бренде Lumina</span>
+                        <h2 class="about-brand__title">Мы создаем мебель и предметы интерьера для вашей идеальной жизни
+                        </h2>
+                        <p class="about-brand__description">
+                            С 2018 года бренд Lumina проектирует и создает премиальную мебель, эстетичный декор и
+                            продуманное освещение.
+                            От уютных диванов и обеденных столов до деталей интерьера — мы объединяем лаконичный дизайн,
+                            натуральные материалы и эргономику, чтобы ваш дом стал настоящим местом притяжения.
+                        </p>
+
+                        <!-- Статистика / Преимущества -->
+                        <div class="about-brand__stats">
+                            <div class="stat-item">
+                                <span class="stat-item__number">7+</span>
+                                <span class="stat-item__label">Лет на рынке</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-item__number">50+</span>
+                                <span class="stat-item__label">Моделей мебели и декора</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-item__number">99%</span>
+                                <span class="stat-item__label">Довольных клиентов</span>
+                            </div>
+                        </div>
+
+                        <a href="#catalog" class="btn btn--primary about-brand__btn">Перейти в каталог</a>
+                    </div>
+                    <div class="about-brand__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80"
+                            alt="Современная мебель Lumina в интерьере гостиной" class="about-brand__img"
+                            loading="lazy">
+                        <div class="about-brand__badge">
+                            <i class="fa-solid fa-couch"></i>
+                            <span>Экологичные и долговечные материалы</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Catalog Section -->
+        <section class="catalog container" id="catalog">
+            <div class="catalog__header">
+                <h2 class="section-title">Каталог товаров</h2>
+
+                <!-- Фильтры по категориям -->
+                <div class="filters">
+                    <button class="filter-btn active" data-category="all">Все</button>
+                    <button class="filter-btn" data-category="sofas">Диваны</button>
+                    <button class="filter-btn" data-category="lighting">Освещение</button>
+                    <button class="filter-btn" data-category="tables">Столы</button>
+                    <button class="filter-btn" data-category="decor">Декор</button>
+                </div>
+            </div>
+
+            <!-- Сетка карточек товаров -->
+            <div class="products-grid" id="products-grid">
+            </div>
+        </section>
+
+        <!-- Блок "Контакты" -->
+        <section class="contacts section" id="contacts">
+            <div class="container">
+                <div class="contacts__wrapper">
+                    <div class="contacts__info">
+                        <h2 class="section__title">Связаться с нами</h2>
+                        <p class="contacts__description">
+                            Наша команда всегда на связи. Мы с удовольствием ответим на любые вопросы,
+                            поможем выбрать мебель для вашего интерьера и подскажем по деталям заказа. </p>
+
+                        <div class="contacts__list">
+                            <div class="contacts__item">
+                                <div class="contacts__icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="contacts__details">
+                                    <span class="contacts__label">Адрес:</span>
+                                    <p class="contacts__text">г. Москва, ул. Дизайнеров, д. 12, стр. 1</p>
+                                </div>
+                            </div>
+
+                            <div class="contacts__item">
+                                <div class="contacts__icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="contacts__details">
+                                    <span class="contacts__label">Телефон:</span>
+                                    <a href="tel:+78005553535" class="contacts__text contacts__link">+7 (800)
+                                        555-35-35</a>
+                                </div>
+                            </div>
+
+                            <div class="contacts__item">
+                                <div class="contacts__icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="contacts__details">
+                                    <span class="contacts__label">E-mail:</span>
+                                    <a href="mailto:info@luminaliving.ru"
+                                        class="contacts__text contacts__link">info@luminaliving.ru</a>
+                                </div>
+                            </div>
+
+                            <div class="contacts__item">
+                                <div class="contacts__icon">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div class="contacts__details">
+                                    <span class="contacts__label">Режим работы:</span>
+                                    <p class="contacts__text">Пн — Вс: с 10:00 до 21:00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Соцсети -->
+                        <div class="contacts__socials">
+                            <a href="#" class="social-link" aria-label="Telegram"><i
+                                    class="fa-brands fa-telegram"></i></a>
+                            <a href="#" class="social-link" aria-label="WhatsApp"><i
+                                    class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#" class="social-link" aria-label="VK"><i class="fa-brands fa-vk"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Форма обратной связи -->
+                    <div class="contacts__form-wrapper">
+                        <h3 class="contacts__form-title">Остались вопросы?</h3>
+                        <p class="contacts__form-subtitle">Заполните форму, и наш менеджер свяжется с вами в течение 15
+                            минут.</p>
+
+                        <form class="contacts__form" id="contact-form">
+                            <div class="form-group">
+                                <input type="text" class="form-input" placeholder="Ваше имя" maxlength="40"
+                                    autocomplete="name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-input" placeholder="+7 (___) ___-__-__" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-input form-textarea" placeholder="Ваш вопрос или комментарий"
+                                    rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary form-submit-btn">Отправить заявку</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Модальное окно быстрого просмотра -->
+    <div class="modal-overlay" id="quick-view-overlay"></div>
+    <div class="modal" id="quick-view-modal">
+        <button class="modal__close" id="modal-close-btn">&times;</button>
+        <div class="modal__content" id="modal-content"></div>
+    </div>
+
+    <!-- Корзина (Sidenav / Drawer) -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-drawer" id="cart-drawer">
+        <div class="cart-drawer__header">
+            <h3 class="cart-drawer__title">Ваша корзина</h3>
+            <button class="cart-drawer__close" id="cart-close-btn">&times;</button>
+        </div>
+        <div class="cart-drawer__body" id="cart-items-container"></div>
+        <div class="cart-drawer__footer">
+            <div class="cart-drawer__total">
+                <span>Итого:</span>
+                <span id="cart-total-price">0 ₽</span>
+            </div>
+            <button class="btn btn--primary" id="checkout-btn" style="width: 100%;">Оформить заказ</button>
+        </div>
+    </aside>
+
+    <div class="cart-overlay" id="wishlist-overlay"></div>
+    <aside class="cart-drawer" id="wishlist-drawer">
+        <div class="cart-drawer__header">
+            <h3 class="cart-drawer__title">Избранное</h3>
+            <button class="cart-drawer__close" id="wishlist-close-btn">&times;</button>
+        </div>
+        <div class="cart-drawer__body" id="wishlist-items-container"></div>
+    </aside>
+
+    <!-- Модальное окно Поиска -->
+    <div class="search-modal-overlay" id="search-overlay"></div>
+    <div class="search-modal" id="search-modal">
+        <div class="search-modal__header">
+            <div class="search-input-wrapper">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search-input" placeholder="Поиск товаров (например, Диван, Торшер)..."
+                    autocomplete="off">
+            </div>
+            <button class="search-modal__close" id="search-close-btn">&times;</button>
+        </div>
+        <div class="search-modal__results" id="search-results">
+            <p class="search-placeholder">Введите название или категорию товара для поиска</p>
+        </div>
+    </div>
+
+    <!-- Модальное окно Авторизации / Регистрации -->
+    <div class="modal-overlay" id="auth-overlay"></div>
+    <div class="modal" id="auth-modal" style="max-width: 420px;">
+        <button class="modal__close" id="auth-close-btn">&times;</button>
+
+        <!-- Форма Входа -->
+        <div id="login-form-container">
+            <h3 style="font-family: var(--font-title); font-size: 24px; margin-bottom: 16px;">Вход в аккаунт</h3>
+            <form id="login-form">
+                <div style="margin-bottom: 12px;">
+                    <input type="email" id="login-email" placeholder="Email" required
+                        style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius);">
+                </div>
+                <div style="margin-bottom: 16px;">
+                    <input type="password" id="login-password" placeholder="Пароль" required
+                        style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius);">
+                </div>
+                <button type="submit" class="btn btn--primary" style="width: 100%;">Войти</button>
+            </form>
+            <p style="margin-top: 16px; font-size: 14px; text-align: center;">
+                Нет аккаунта? <a href="#" id="show-register-btn"
+                    style="color: var(--accent-color); font-weight: 500;">Зарегистрироваться</a>
+            </p>
+        </div>
+
+        <!-- Форма Регистрации (по умолчанию скрыта) -->
+        <div id="register-form-container" style="display: none;">
+            <h3 style="font-family: var(--font-title); font-size: 24px; margin-bottom: 16px;">Регистрация</h3>
+            <form id="register-form">
+                <div style="margin-bottom: 12px;">
+                    <input type="text" id="reg-name" placeholder="Ваше имя" required
+                        style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius);">
+                </div>
+                <div style="margin-bottom: 12px;">
+                    <input type="email" id="reg-email" placeholder="Email" required
+                        style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius);">
+                </div>
+                <div style="margin-bottom: 16px;">
+                    <input type="password" id="reg-password" placeholder="Пароль (минимум 6 символов)" minlength="6"
+                        required
+                        style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius);">
+                </div>
+                <button type="submit" class="btn btn--primary" style="width: 100%;">Зарегистрироваться</button>
+            </form>
+            <p style="margin-top: 16px; font-size: 14px; text-align: center;">
+                Уже есть аккаунт? <a href="#" id="show-login-btn"
+                    style="color: var(--accent-color); font-weight: 500;">Войти</a>
+            </p>
+        </div>
+
+        <!-- Панель Профиля (если пользователь вошел) -->
+        <div id="profile-container" style="display: none; text-align: center;">
+            <i class="fa-solid fa-circle-user"
+                style="font-size: 48px; color: var(--accent-color); margin-bottom: 12px;"></i>
+            <h3 id="user-display-name" style="font-family: var(--font-title); font-size: 22px; margin-bottom: 4px;">
+            </h3>
+            <p id="user-display-email" style="font-size: 14px; color: var(--text-muted); margin-bottom: 20px;"></p>
+            <button class="btn btn--outline" id="logout-btn" style="width: 100%;">Выйти из аккаунта</button>
+        </div>
+    </div>
+
+<!-- Окно подтверждения заказа -->
+<div id="checkout-modal-overlay" class="modal-overlay">
+    <div class="checkout-confirm-modal">
+        <button class="close-modal" id="checkout-modal-close">&times;</button>
+        <h2>Подтверждение заказа</h2>
+        
+        <form id="checkout-confirm-form">
+            <div class="form-group" style="margin-bottom: 16px;">
+                <label for="delivery-address" style="display: block; margin-bottom: 8px;">Адрес доставки:</label>
+                <input type="text" id="delivery-address" required placeholder="Город, улица, дом, квартира">
+            </div>
+
+            <div class="form-group" style="margin-bottom: 16px;">
+                <label for="delivery-date" style="display: block; margin-bottom: 8px;">Дата доставки:</label>
+                <input type="date" id="delivery-date" required>
+            </div>
+
+            <div class="order-summary-details">
+                <p>Товаров в заказе: <span id="confirm-items-count">0</span></p>
+                <p style="font-size: 1.1rem; font-weight: bold; margin-top: 8px;">Итоговая цена: <span id="confirm-total-price">0</span> ₽</p>
+            </div>
+
+            <button type="submit" class="btn-primary" id="final-submit-btn">Подтвердить заказ</button>
+        </form>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

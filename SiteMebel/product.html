@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Товар — Lumina Living</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="logo">Lumina Living</a>
+
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav__link">Каталог</a>
+        <a href="index.html#new-arrivals" class="nav__link">Новинки</a>
+        <a href="index.html#about" class="nav__link">О бренде</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn cart-btn" id="cart-btn" aria-label="Корзина">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="badge badge--cart" id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Detail Section -->
+  <main class="container product-page">
+    <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Назад в каталог</a>
+
+    <div class="product-detail" id="product-detail-container">
+    </div>
+  </main>
+
+  <!-- Боковая панель корзины (Корзина-дравер) -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer__header">
+      <h2>Ваша корзина</h2>
+      <button class="cart-close-btn" id="cart-close-btn">&times;</button>
+    </div>
+
+    <div class="cart-drawer__body" id="cart-items-container">
+    </div>
+
+    <div class="cart-drawer__footer">
+      <div class="cart-drawer__total">
+        <span>Итого:</span>
+        <strong id="cart-total-price">0 ₽</strong>
+      </div>
+      <button class="btn btn--primary" id="checkout-btn" style="width: 100%;">Оформить заказ</button>
+    </div>
+  </aside>
+  <script src="products.js"></script>
+  <script src="product-detail.js"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
